@@ -1,0 +1,30 @@
+{
+  "id": "2298756",
+  "name": "manage_system_new",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7310741",
+      "name": "User select",
+      "font_class": "user",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "15797025",
+      "name": "dianhua",
+      "font_class": "tel",
+      "unicode": "e791",
+      "unicode_decimal": 59281
+    },
+    {
+      "icon_id": "844620",
+      "name": "锁",
+      "font_class": "lock",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    }
+  ]
+}
