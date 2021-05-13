@@ -1,9 +1,21 @@
 module.exports = {
+    // devServer: {
+    //     proxy: {
+    //         '/': {
+    //             target: 'http://127.0.0.1:8888/api/private/v1/',
+    //             // pathRewrite: {
+    //             //     '^/': ''
+    //             // },
+    //             // changeOrigin: true
+    //         }
+    //     }
+    // },
+    publicPath: process.env.NODE_ENV === 'production' ? './' : '',
     chainWebpack: config => {
         // 发布模式
         config.when(process.env.NODE_ENV === 'production', config => {
             config.entry('app').clear().add('./src/main-prod.js')
-
+            //externals 排除不需要打包的文件，需要用到的时候去window查找
             config.set('externals', {
                 vue: 'Vue',
                 'vue-router': 'VueRouter',
